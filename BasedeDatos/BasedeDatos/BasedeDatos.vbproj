@@ -6,7 +6,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{42E3CCE9-ADA3-4D8E-B1B5-4EA3665D581E}</ProjectGuid>
+    <ProjectGuid>{C2A34335-3EB7-43A1-A9C0-A8FB50405037}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <StartupObject>BasedeDatos.My.MyApplication</StartupObject>
     <RootNamespace>BasedeDatos</RootNamespace>
@@ -79,7 +79,7 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="funcionesdb.vb" />
+    <Compile Include="Funcionesdb.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
