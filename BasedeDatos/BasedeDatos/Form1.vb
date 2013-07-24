@@ -2,6 +2,22 @@
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         conexion()
+        llenaGrid()
+    End Sub
+
+    Private Sub llenaGrid()
+        Dim ds As New DataSet
+        Dim dt As New DataTable
+        Dim strSql As String = "SELECT ID, NOMBRES, APELLIDOS, CORREO, DIRECCION FROM TABLA1"
+        Dim adp As New OleDb.OleDbDataAdapter(strSql, conn)
+
+        ds.Tables.Add("tabla")
+        adp.Fill(ds.Tables("tabla"))
+
+        Me.DataGridView1.DataSource = ds.Tables("tabla")
+
+        Me.DataGridView1.Columns(0).HeaderText = "COD. CLIENTE"
+
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
